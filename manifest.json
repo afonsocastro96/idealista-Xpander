@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "idealista Xpander",
+  "version": "0.1.0",
+  "description": "Adiciona aos anúncios do idealista o preço/m² de cada anúncio, o ano de construção e o tamanho do terreno.",
+  "icons": {
+     "16": "16.png",
+     "32": "32.png",
+     "48": "48.png",
+    "128": "128.png"
+  },
+  "content_scripts": [{
+    "js": ["code.jquery.com_jquery-3.7.1.min.js", "content.js"],
+    "matches": ["https://www.idealista.pt/*"]
+  }]
+ 
+}
